@@ -1,0 +1,155 @@
+/* ================================================
+   DORMEDS Theme System - CSS Custom Properties
+   ================================================ */
+
+:root {
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Sidebar */
+  --sidebar-width: 260px;
+  --sidebar-collapsed: 72px;
+  --header-height: 64px;
+
+  /* Brand Colors */
+  --brand-primary: #6C5CE7;
+  --brand-primary-light: #A29BFE;
+  --brand-primary-dark: #5A4BD1;
+  --brand-secondary: #00CEC9;
+  --brand-accent: #FD79A8;
+
+  /* Status Colors */
+  --color-success: #00B894;
+  --color-success-light: #55EFC4;
+  --color-warning: #FDCB6E;
+  --color-warning-dark: #E17055;
+  --color-error: #FF6B6B;
+  --color-error-light: #FF8A8A;
+  --color-info: #74B9FF;
+}
+
+/* ===== DARK THEME (Default) ===== */
+[data-theme="dark"] {
+  --bg-primary: #0F0F1A;
+  --bg-secondary: #1A1A2E;
+  --bg-tertiary: #16213E;
+  --bg-card: #1E1E35;
+  --bg-card-hover: #252545;
+  --bg-input: #1A1A30;
+  --bg-sidebar: #12121F;
+  --bg-header: rgba(15, 15, 26, 0.85);
+  --bg-modal: #1E1E35;
+  --bg-tooltip: #2D2D4A;
+  --bg-glass: rgba(30, 30, 53, 0.7);
+
+  --border-primary: rgba(108, 92, 231, 0.2);
+  --border-secondary: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(108, 92, 231, 0.4);
+
+  --text-primary: #F0F0F5;
+  --text-secondary: #A0A0C0;
+  --text-tertiary: #6B6B8A;
+  --text-inverse: #0F0F1A;
+  --text-link: #A29BFE;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-sidebar: 4px 0 20px rgba(0, 0, 0, 0.3);
+  --shadow-dropdown: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+  --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+  --gradient-secondary: linear-gradient(135deg, #00CEC9 0%, #74B9FF 100%);
+  --gradient-accent: linear-gradient(135deg, #FD79A8 0%, #FDCB6E 100%);
+  --gradient-bg: linear-gradient(135deg, #0F0F1A 0%, #1A1A2E 50%, #16213E 100%);
+  --gradient-card: linear-gradient(135deg, rgba(108, 92, 231, 0.05) 0%, rgba(0, 206, 201, 0.05) 100%);
+
+  --scrollbar-track: #1A1A2E;
+  --scrollbar-thumb: #3A3A5A;
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --bg-primary: #F5F6FA;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #EEF0F8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F9FD;
+  --bg-input: #F0F2F8;
+  --bg-sidebar: #FFFFFF;
+  --bg-header: rgba(245, 246, 250, 0.9);
+  --bg-modal: #FFFFFF;
+  --bg-tooltip: #2D2D4A;
+  --bg-glass: rgba(255, 255, 255, 0.75);
+
+  --border-primary: rgba(108, 92, 231, 0.15);
+  --border-secondary: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(108, 92, 231, 0.35);
+
+  --text-primary: #1A1A2E;
+  --text-secondary: #5A5A7A;
+  --text-tertiary: #8A8AA0;
+  --text-inverse: #F0F0F5;
+  --text-link: #6C5CE7;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-sidebar: 2px 0 12px rgba(0, 0, 0, 0.06);
+  --shadow-dropdown: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+  --gradient-secondary: linear-gradient(135deg, #00CEC9 0%, #74B9FF 100%);
+  --gradient-accent: linear-gradient(135deg, #FD79A8 0%, #FDCB6E 100%);
+  --gradient-bg: linear-gradient(135deg, #F5F6FA 0%, #EEF0F8 50%, #E8ECF8 100%);
+  --gradient-card: linear-gradient(135deg, rgba(108, 92, 231, 0.03) 0%, rgba(0, 206, 201, 0.03) 100%);
+
+  --scrollbar-track: #F0F0F0;
+  --scrollbar-thumb: #C0C0D0;
+}
